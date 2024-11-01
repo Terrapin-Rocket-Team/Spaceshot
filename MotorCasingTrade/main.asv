@@ -1,0 +1,40 @@
+%% Main
+
+
+%% Changeable Parameters
+diameter_booster = .1524; % m (6 inches)
+diameter_sustainer = .1016; % m (4 inches)
+motor_casing_yield_strength = 276E6; % Pa 6061 Aluminum
+motor_casing_density = 2700; % kg/m^3 6061 Aluminum
+%altitude = 10000; % m Karman line
+dV = 2000; %m/s (delta-V) https://space.stackexchange.com/questions/27898/what-is-the-delta-v-equivalent-to-cross-the-k%C3%A1rm%C3%A1n-line-in-vertical-suborbital
+
+%% Constant Parameters
+Isp = 180; % s based on pdr value
+propellant_density = 1702; % kg/m^3 based on pdr value
+pressure_chamber = 7E6; % Pa TODO update this -- based on pdr values
+me_s = 5; % kg
+me_b 
+
+
+for x = [.1:.01:.9]
+    % x is first stage dV fraction
+    dVb = dV*x;
+    dVs = dV*(1-x);
+
+    L_s = lengthSustainer()
+    m_s = 
+
+
+
+
+
+end
+
+
+
+
+
+
+
+
