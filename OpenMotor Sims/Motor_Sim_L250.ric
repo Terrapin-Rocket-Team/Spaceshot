@@ -1,0 +1,59 @@
+data:
+  config:
+    ambPressure: 101324.99998565002
+    burnoutThrustThres: 0.1
+    burnoutWebThres: 2.5400050800101604e-05
+    flowSeparationWarnPercent: 0.05
+    mapDim: 750
+    maxMassFlux: 1406.4697609001405
+    maxPressure: 10342500.000000002
+    minPortThroat: 2.0
+    sepPressureRatio: 0.4
+    timestep: 0.03
+  grains:
+  - properties:
+      coreDiameter: 0.012700025400050802
+      coreOffset: 0.017018034036068077
+      diameter: 0.04749809499619
+      inhibitedEnds: Top
+      length: 0.5625349250698501
+    type: Moon Burner
+  - properties:
+      coreDiameter: 0.012700025400050802
+      coreOffset: 0.017018034036068077
+      diameter: 0.04749809499619
+      inhibitedEnds: Top
+      length: 0.5625349250698501
+    type: Moon Burner
+  - properties:
+      coreDiameter: 0.042164084328168656
+      diameter: 0.04241808483616968
+      inhibitedEnds: Neither
+      length: 0.025400050800101603
+    type: BATES
+  nozzle:
+    convAngle: 0.0
+    divAngle: 0.0
+    efficiency: 0.95
+    erosionCoeff: 0.0
+    exit: 0.031750063500127004
+    slagCoeff: 0.0
+    throat: 0.012293624587249176
+    throatLength: 0.0
+  propellant:
+    density: 1820.230130676801
+    name: RCS - White Lightning
+    tabs:
+    - a: 5.710516747228669e-06
+      k: 1.243
+      m: 27.125
+      maxPressure: 10342500.000000002
+      minPressure: 0.0
+      n: 0.45
+      t: 2339.0
+type: !!python/object/apply:uilib.fileIO.fileTypes
+- 3
+version: !!python/tuple
+- 0
+- 6
+- 0
