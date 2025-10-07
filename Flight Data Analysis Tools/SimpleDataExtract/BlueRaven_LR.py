@@ -18,12 +18,21 @@ class CSVdata():
 class main:
     dataRaw = CSVdata() 
     filename = input("Enter the CSV file path: ") # replace with your actual file path
-    dataRaw.pull(filename) # replace 'your_filename.csv' with your actual file path
+    dataRaw.pull(filename) # load data from CSV
+    
+    # Baro Apogee
+    apogee = max(dataRaw.baro_alt_AGL)
+    apogee_time = dataRaw.flight_time[dataRaw.baro_alt_AGL.index(apogee)]
+    print(f"Apogee (Max Barometric Altitude AGL): {apogee} @ {apogee_time} seconds")
 
+    # Plot: Barometric Altitude AGL over Flight Time
     plt.plot(dataRaw.flight_time, dataRaw.baro_alt_AGL)
+    plt.axvline(apogee_time, color='red', label='Apogee', linestyle='-')
+    plt.axhline(y=0, color='green', label='Ground', linestyle='-')
     plt.title('Barometric Altitude AGL over Flight Time')
     plt.xlabel('Flight Time')
     plt.ylabel('Barometric Altitude AGL')
+    plt.legend()
     plt.show()
 
 if __name__ == "__main__":
