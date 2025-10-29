@@ -314,7 +314,7 @@ stage1_flight = Flight(
     max_time_step=1
 )
 
-#stage1_flight.plots.trajectory_3d()
+# stage1_flight.plots.trajectory_3d()
 
 stage1_end = stage1_flight.solution[-1]
 
