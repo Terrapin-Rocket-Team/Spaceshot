@@ -26,7 +26,7 @@ enum FlightStage
 };
 
 // Stage detection thresholds
-#define LAUNCH_ALT_THRESHOLD 50.0   // meters (GPS)
+#define LAUNCH_ALT_THRESHOLD 100.0   // meters (GPS)
 #define DESCENT_TIME_THRESHOLD 5000 // milliseconds
 #define MAIN_ALT_THRESHOLD 1000.0   // meters (GPS)
 #define LANDED_TIME_THRESHOLD 10000 // milliseconds
